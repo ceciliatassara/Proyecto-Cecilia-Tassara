@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/4fc22edabf.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/shortcut.PNG">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="flex__container__nav">
+        <a class="flex__container__logo" href="../index.html">
+            <img src="../assets/logo/logo.png" alt=logo width="300px ">
+        </a>
+        <!--hipervínculos a mis distintas páginas web-->
+        <!--Listas desordenadas-->
+        <!--Icono a home-->
+        <ul class=" flex__container__logo ">
+            <li class="flex__li"> <a href="../index.html">Inicio</a></li>
+            <li class="flex__li"> <a href="./sobrenosotros.html">Sobre Nosotros</a></li>
+            <li class="flex__li"> <a href="./productos.html">Productos</a></li>
+            <li class="flex__li"> <a href="./contacto.html">Contacto</a></li>
+            <li class="flex__li"> <a href="./politicasdedevolucion.html">Politicas de devolucion</a></li>
+        </ul>
+
+    </nav>
+
+    <section class="background-inicio ">
+        <h1 class="background-titulo ">Contactanos</h1>
+    </section>
+
+    <!--Formulario de contacto-->
+
+    <main class="body-contact">
+        <form class="formulario-contacto" action="procesar.php" name="contacto" method="post">
+            <fieldset>
+                <legend class="titulo-contacto">¡Dejanos tu consulta !</legend>
+
+                <div class="bloque">
+                    <label>Nombre:
+            <input type="text " name="nombre " placeholder="Ana" required>
+                </label>
+                </div>
+
+                <div class="bloque">
+                    <label>Apellido:
+            <input type="text " name="apellido " placeholder="Gonzalez" required>
+                </label>
+                </div>
+
+                <div class="bloque">
+                    <label>Email:
+            <input type="email " name="apellido " placeholder="hola@tanuki-bebe.com.ar " required>
+                </label>
+                </div>
+
+                <div class="bloque">
+                    <label>Telefono:
+            <input type="celular " name="telefono" placeholder="54545454" required>
+                </label>
+                </div>
+
+                <!--Comentario-->
+                <h4 class="h4-bloque">Dejános tu comentario</h4>
+                <textarea name="comentario" id=" " cols="20" rows="20"></textarea>
+
+                <!--Botones-->
+                <p class="pboton-contacto">
+                    <button class="boton-contacto" type="submit ">Enviar</button>
+                </p>
+
+            </fieldset>
+
+        </form>
+    </main>
+    <footer id="footer">
+        <article>
+            <h4>Encontranos en:</h4>
+            <h1 class="maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52563.48321192621!2d-58.45603506672107!3d-34.573357675031176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20CABA!5e0!3m2!1ses!2sar!4v1656685275437!5m2!1ses!2sar"
+                    width="400" height="150 " style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></h1>
+        </article>
+        <article>
+            <h4>Medios de pago:</h4>
+            <img width="90px" src="../assets/fotos-tarjetas/mercadopago@2x.png" alt="mercadopago">
+            <img width="90px" src="../assets/fotos-tarjetas/rapipago@2x.png" alt="rapipago">
+            <img width="90px" src="../assets/fotos-tarjetas/pagofacil@2x.png" alt="pagofacil">
+        </article>
+
+        <article class="redessociales">
+            <h4>Seguinos en nuestras redes:</h4>
+            <!--Iconos de redes-->
+            <img width="50px" src="../assets/redes sociales/instagram.png" alt="instagram">
+            <!--Iconos de redes-->
+            <img width="50px" src="../assets/redes sociales/facebook.png" alt="facebook">
+            <!--Iconos de redes-->
+            <img width="50px" src="../assets/redes sociales/wsp.png" alt="wsp">
+        </article>
+        <article>
+            <h4>Desarrollado por la camada DW 41165</h4>
+        </article>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
