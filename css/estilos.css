@@ -1,636 +1,537 @@
-    /*Font Descargada*/
-    
-    @font-face {
-        font-family: 'Poppins', sans-serif;
-        src: url(../assets/fonts/Poppins-ExtraLight.ttf);
+/*Font Descargada*/
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url(../assets/fonts/Poppins-ExtraLight.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: #E9D5C0;
+}
+
+.navbar-collapse {
+    flex-grow: initial;
+}
+
+.container-fluid {
+    background-color: grey;
+}
+
+nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    background-color: #808080;
+    background-attachment: fixed;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: flex-end;
+    justify-content: flex-end;
+    color: white;
+    text-decoration: none;
+}
+
+*/ p {
+    font-family: "poppins", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.flex__li {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rm;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/*transiciones*/
+
+.h1__tituloproductos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: grey;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 50px;
+    color: #FBE6EF;
+}
+
+
+/*CSS 3 imgvariedad de productos */
+
+.flex__main {
+    display: grid;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    background-color: #E9D5C0;
+}
+
+.row {
+    justify-content: center;
+}
+
+.tarjeta {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta__imagen {
+    display: flex;
+    float: inline-start;
+    flex-wrap: wrap;
+    border-radius: 20%;
+    width: 70%;
+}
+
+.tarjeta__texas {
+    display: flex;
+    flex-wrap: wrap;
+    color: grey;
+    border-radius: 5%;
+    justify-content: center;
+    border: 2px dashed grey;
+    margin: 5px;
+    text-align: center;
+}
+
+.tarjeta__titulo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.tarjeta__parrafo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.tarjeta__enlace {
+    display: flex;
+    text-decoration: none;
+    font-size: 1rem;
+    color: grey;
+    justify-content: center;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 8px;
+    font-size: 15px;
+}
+
+
+/*transiciones*/
+
+.boton:hover {
+    height: 50px;
+    background-color: #E0FFFD;
+}
+
+
+/*CSS navegacion*/
+
+.flex__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    align-content: center;
+    border: 5px solid black;
+    padding: 80px;
+}
+
+.flex__container>* {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+
+/*CSS page sobre nosotros*/
+
+.flex__p {
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    background-color: grey;
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    border: solid white 2px;
+    text-align: center;
+}
+
+.flex__p__video {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    border: solid white 2px;
+}
+
+video {
+    height: 30%;
+    padding: 10px;
+    width: 20%;
+}
+
+.piede__pagina {
+    background-size: cover;
+    font-size: 90px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    background-image: url(../assets/portada/piedepagina.png);
+    color: grey;
+    width: 100%;
+    height: 600px;
+}
+
+.titulo__piede__pagina {
+    display: flex;
+    color: white;
+}
+
+.img__piedepagina {
+    display: flex;
+}
+
+
+/*CSS GRID galeria*/
+
+.items {
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 100px;
+}
+
+.col-12 {
+    margin: 10px;
+}
+
+.guiadetalles {
+    background-color: grey;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/*CSS footer*/
+
+#footer {
+    background-color: grey;
+    display: grid;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: start;
+    gap: 15px;
+}
+
+
+/*politica de dvolucion*/
+
+.politica__devolucion {
+    border: dashed grey;
+    color: grey;
+    text-align: center;
+    height: 50%;
+    margin: 10px;
+    font-size: 40px;
+    background-color: #E0FFFD;
+    align-items: center;
+    padding: 50px;
+}
+
+.h4politica__devolucion {
+    font-size: 1rem;
+}
+
+.h2politica__devolucion {
+    font-size: 1rem;
+}
+
+
+/*contacto*/
+
+.body-contact {
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.titulo-contacto {
+    color: black;
+}
+
+input {
+    width: 100%;
+    font-size: 40px;
+    border: none;
+    border-bottom: 5px solid #E0FFFD;
+    margin: 10px;
+    color: black;
+    background-color: #E9D5C0;
+}
+
+.boton-contacto {
+    background-color: #E0FFFD;
+    text-transform: uppercase;
+    border: 0;
+    padding: 1rm;
+    width: 100%;
+    height: 80px;
+    font-size: 30px;
+}
+
+.formulario-contacto {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    color: black;
+}
+
+.bloque {
+    padding: 10px;
+    grid-column: 1/3;
+}
+
+.h4-bloque {
+    text-align: center;
+    padding: 10px;
+}
+
+textarea {
+    align-items: center;
+    margin: 10px 80px;
+}
+
+.h4__footer {
+    font-size: 0.5rem;
+}
+
+
+/*Tablet*/
+
+@media only screen and (max-width: 768px) {}
+
+
+/*mobile*/
+
+@media only screen and (max-width: 576px) {
+    {
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+        padding: 10px;
     }
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    html {
-        font-family: 'Poppins', sans-serif;
-        font-size: 20px;
-    }
-    
-    body {
-        background-color: #E9D5C0;
-    }
-    
-    nav {
-        display: flex;
-        list-style-type: none;
-        justify-content: space-between;
-        background-color: #808080;
-        background-attachment: fixed;
-    }
-    
-    nav ul {
-        display: flex;
-        list-style-type: none;
-    }
-    
-    nav ul li {
-        display: inline-block;
-    }
-    
-    nav ul li a {
-        display: flex-end;
-        justify-content: flex-end;
-        color: white;
-        text-decoration: none;
-    }
-    
-    p {
-        font-family: "poppins", sans-serif;
-        font-weight: bold;
-        font-size: 20px;
-    }
-    
     .flex__li {
-        display: flex;
-        align-items: center;
-        font-size: 50px;
-        padding: 30px;
-        margin: 30px;
+        font-size: 15px;
+        padding: 10px;
+        margin: 10px;
     }
-    
-    .background-inicio {
-        font-family: ;
-        height: 800px;
-        background-image: url(../assets/portada/portada3.png);
-        background-size: cover;
-        font-size: 100px;
-        display: flex;
+    .flex__container__ul {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        text-align: center;
     }
-    
     .background-titulo {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        font-size: 150px;
-        color: #E0FFFD;
-        ;
-    }
-    
-    .boton-contactanos {
-        display: flex;
-        align-items: center;
-        background-color: #FBE6EF;
-        padding: 50px;
-        margin: 40px;
-        height: 20px;
-        font-size: 30px;
-        color: black;
-        border: 4px dashed #E0FFFD;
-    }
-    /*transiciones*/
-    
-    .boton-contactanos:hover {
-        height: 100px;
-        background-color: #E0FFFD;
-    }
-    
-    .h1__tituloproductos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        background-color: grey;
-        font-family: 'Poppins', sans-serif;
-        font-size: 70px;
-        width: 100%;
-        padding: 50px;
-        color: #FBE6EF;
-    }
-    /*CSS 3 imgvariedad de productos */
-    
-    .flex__main {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-        grid-row-gap: 20px;
-        background-color: #E9D5C0;
-    }
-    
-    .tarjeta {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 60px;
-        padding: 20px;
-    }
-    
-    .tarjeta__imagen {
-        display: flex;
-        justify-content: center;
-        font-size: 40px;
+        font-size: 50px;
         padding: 20px;
         margin: 20px;
-        width: 1000px;
-        float: inline-start;
-        flex-wrap: wrap;
+    }
+    .background-inicio {
+        height: 250px;
+    }
+    .boton-contactanos {
+        padding: 30px;
+        margin: 20px;
+        height: 5px;
+        font-size: 10px;
+        color: black;
+        border: 2px dashed #E0FFFD;
+    }
+    .h1__tituloproductos {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .flex__main {
+        flex-direction: column-reverse;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .tarjeta {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
+    }
+    .tarjeta__imagen {
+        width: 90%;
+        align-items: center;
+    }
+    .tarjeta__texas {
+        padding: none;
+        margin: none;
+        width: 300px;
+        height: 200px;
         border-radius: 10%;
     }
-    
-    .tarjeta__texas {
-        display: flex;
-        flex-wrap: wrap;
-        color: grey;
-        width: 900px;
-        text-align: center;
-        padding: 40px;
-        border-radius: 50%;
-        justify-content: center;
-        border: 4px dashed grey;
-        margin: 20px;
-    }
-    
-    .tarjeta__titulo {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-        margin: 10px;
-        padding: 5px;
-    }
-    
-    .tarjeta__parrafo {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 700px;
-        font-family: 'Poppins', sans-serif;
-        font-size: 30px;
-        padding: 10px;
-    }
-    
     .tarjeta__enlace {
-        padding: 5px;
-        display: flex;
-        text-decoration: none;
-        font-size: 50px;
-        color: grey;
-        justify-content: center;
+        font-size: 30px;
+        padding: none;
+        margin: none;
     }
-    
+    .tarjeta__parrafo {
+        font-size: 1rem;
+        padding: none;
+        margin: none;
+    }
     .boton {
-        display: flex;
-        padding: 5px;
-        width: 200px;
+        padding: none;
+        width: 100px;
         height: 50px;
-        font-size: 40px;
-        align-items: center;
-        justify-content: center;
-        margin: 20px;
+        font-size: 20px;
+        margin: none;
     }
-    /*transiciones*/
-    
-    .boton:hover {
-        height: 100px;
-        background-color: #E0FFFD;
-    }
-    /*CSS navegacion*/
-    
-    .flex__container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: right;
-        align-items: center;
-        align-content: center;
-        border: 5px solid black;
-        padding: 80px;
-    }
-    
-    .flex__container>* {
-        display: flex;
-        justify-content: space-between;
-        font-family: 'Poppins', sans-serif;
-        font-size: 40px;
-    }
-    /*CSS page sobre nosotros*/
-    
-    .flex__p {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        display: flex;
-        align-items: center;
-        letter-spacing: 2px;
-        font-size: 40px;
-        background-color: grey;
-        color: white;
-        margin: 20px;
-        padding: 5px;
-        width: 50%;
-        border: solid white 2px;
-    }
-    
-    .flex__p__video {
-        display: flex;
-        justify-content: center;
-        margin: 20px;
-        border: solid white 2px;
-    }
-    
-    video {
-        height: 30%;
-        padding: 10px;
-        width: 20%;
-    }
-    
-    .piede__pagina {
-        background-size: cover;
-        font-size: 90px;
-        display: flex;
-        align-items: center;
-        align-content: center;
-        text-align: center;
-        justify-content: center;
-        background-image: url(../assets/portada/piedepagina.png);
-        color: grey;
-        width: 100%;
-        height: 600px;
-    }
-    
-    .titulo__piede__pagina {
-        display: flex;
-        color: white;
-    }
-    
-    .img__piedepagina {
-        display: flex;
-    }
-    /*CSS GRID galeria*/
-    
-    .grid-container {
-        display: grid;
-        font-family: 'Poppins', sans-serif;
-        font-size: 25px;
-        text-transform: uppercase;
-        width: 100%;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 20px;
-        background-color: #E9D5C0;
-    }
-    
-    .items {
-        font-family: 'Poppins', sans-serif;
-        justify-content: center;
-        align-items: center;
-        margin: 30px;
-        height: 900px;
-    }
-    
-    .item1 {
-        display: flex;
-        background-image: url(../assets/img-productos/bodys.jpg);
-        font-size: 100px;
-        color: white;
-        border-radius: 30px;
-    }
-    
-    .item2 {
-        display: flex;
-        background-image: url(../assets/img-productos/conjuntos.jpg);
-        font-size: 100px;
-        color: white;
-        border-radius: 30px;
-    }
-    
-    .item3 {
-        display: flex;
-        background-image: url(../assets/img-productos/mantas.jpg);
-        font-size: 100px;
-        color: white;
-        border-radius: 30px;
-    }
-    
-    .item4 {
-        display: flex;
-        background-image: url(../assets/img-productos/enterito1.jpg);
-        font-size: 100px;
-        color: white;
-        border-radius: 30px;
-    }
-    
-    .item5 {
-        display: flex;
-        background-image: url(../assets/img-productos/ajuares.jpg);
-        font-size: 100px;
-        color: white;
-        border-radius: 30px;
-    }
-    
-    .item6 {
-        display: flex;
-        background-image: url(../assets/img-productos/enterito.jpg);
-        font-size: 100px;
-        color: white;
-        border-radius: 30px;
-    }
-    
-    .main__guiadetalles {
-        display: flex;
-        width: 100%;
-        height: 900px;
-        font-size: 30px;
-        background-image: url(../assets/portada/pieguiatalles.png);
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        background-size: cover;
-    }
-    
-    .titulo__guiadetalles {
-        display: flex;
-        padding: 30px;
-        border: solid 2px;
-        width: 1100px;
-        justify-content: center;
-        color: grey;
-    }
-    
-    table {
-        width: 1100px;
-        height: 300px;
-        justify-content: center;
-    }
-    
-    tr {
-        text-align: center;
-        width: 700px;
-        height: 100px;
-        background-color: grey;
-        color: white;
-        font-size: 40px;
-    }
-    
-    td {
-        width: 700px;
-        height: 100px;
-        background-color: #E0FFFD;
-        text-align: center;
-        color: grey;
-        font-size: 30px;
-    }
-    /*CSS footer*/
-    
     #footer {
-        background-color: grey;
-        display: grid;
-        font-size: 30px;
-        color: white;
-        padding: 10px;
-        grid-template-columns: repeat(4, 1fr);
-        justify-items: start;
-        gap: 15px;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 20px;
     }
-    /*politica de dvolucion*/
-    
-    .politica__devolucion {
-        border: dashed grey;
-        color: grey;
-        text-align: center;
-        height: 700px;
-        margin: 10px;
-        font-size: 40px;
-        background-color: #E0FFFD;
-        align-items: center;
-        padding: 100px;
-    }
-    
-    .h4politica__devolucion {
-        padding: 100px;
-    }
-    /*contacto*/
-    
-    .body-contact {
-        font-size: 50px;
-        justify-content: center;
-        align-items: center;
-        padding: 0 1.5rem;
-    }
-    
-    .titulo-contacto {
-        color: black;
-    }
-    
-    input {
-        width: 100%;
-        font-size: 40px;
-        border: none;
-        border-bottom: 5px solid #E0FFFD;
-        margin: 10px;
-        color: black;
-        background-color: #E9D5C0;
-    }
-    
-    .boton-contacto {
-        background-color: #E0FFFD;
-        text-transform: uppercase;
-        border: 0;
-        padding: 1rm;
-        width: 100%;
-        height: 80px;
-        font-size: 30px;
-    }
-    
-    .formulario-contacto {
-        padding: 50px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    /*mobile productos*/
+    .grid-container {
         flex-direction: column;
-        color: black;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        justify-items: center;
     }
-    
-    .bloque {
-        padding: 10px;
-        grid-column: 1/3;
+    .items {
+        background-size: cover;
+        width: 400px;
+        height: 400px;
+        font-size: 30px;
+        justify-items: center;
     }
-    
-    .h4-bloque {
+    .titulo__guiadetalles {
+        font-size: 20px;
+    }
+    table {
+        width: 500px;
+        margin: auto;
+    }
+    .main__guiadetalles {
+        width: auto;
+        height: auto;
+        padding: 20px;
+    }
+    th {
+        font-size: 20px;
+    }
+    td {
+        font-size: 20px;
+    }
+    /*mobile quienes somos*/
+    .flex__p__video {
+        flex-direction: column;
+        width: 100%;
+        justify-items: center;
         text-align: center;
+        padding: 20px;
+    }
+    .flex__p {
+        font-size: 20px;
+    }
+    video {
+        width: 100%;
+    }
+    .piede__pagina {
+        font-size: 20px;
+    }
+    .h4__footer {
+        justify-items: start;
+    }
+    /*politicas de cambiomobile*/
+    .politica__devolucion {
+        font-size: 20px;
+        height: 600px;
+        padding: 5px;
+    }
+    .h4politica__devolucion {
         padding: 10px;
     }
-    
+    .h2politica__devolucion {
+        font-size: 2rem;
+    }
+    /*mobile contacto*/
+    .body-contact {
+        padding: 10px;
+    }
+    .titulo-contacto {
+        font-size: 30px;
+    }
+    input {
+        font-size: 30px;
+    }
+    label {
+        font-size: 30px;
+    }
+    .formulario-contacto {
+        padding: 40px;
+    }
     textarea {
-        align-items: center;
-        margin: 10px 80px;
+        width: 300px;
+        height: 200px;
     }
-    /*Tablet*/
-    
-    @media only screen and (max-width: 768px) {}
-    /*mobile*/
-    
-    @media only screen and (max-width: 576px) {
-        nav {
-            flex-direction: column;
-            align-items: center;
-            font-size: 10px;
-            padding: 10px;
-        }
-        .flex__li {
-            font-size: 15px;
-            padding: 10px;
-            margin: 10px;
-        }
-        .background-titulo {
-            font-size: 50px;
-            padding: 20px;
-            margin: 20px;
-        }
-        .background-inicio {
-            height: 250px;
-        }
-        .boton-contactanos {
-            padding: 30px;
-            margin: 20px;
-            height: 5px;
-            font-size: 10px;
-            color: black;
-            border: 2px dashed #E0FFFD;
-        }
-        .h1__tituloproductos {
-            font-size: 30px;
-        }
-        .flex__main {
-            flex-direction: column-reverse;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-        }
-        .tarjeta {
-            flex-direction: column;
-            padding: 10px;
-            margin: 10px;
-        }
-        .tarjeta__imagen {
-            width: 90%;
-            align-items: center;
-        }
-        .tarjeta__texas {
-            padding: none;
-            margin: none;
-            width: 400px;
-            height: 300px;
-            border-radius: 10%;
-        }
-        .tarjeta__enlace {
-            font-size: 30px;
-            padding: none;
-            margin: none;
-        }
-        .tarjeta__parrafo {
-            font-size: 20px;
-            padding: none;
-            margin: none;
-        }
-        .boton {
-            padding: none;
-            width: 100px;
-            height: 50px;
-            font-size: 20px;
-            margin: none;
-        }
-        #footer {
-            grid-template-columns: repeat(1, 1fr);
-            font-size: 20px;
-        }
-        /*mobile productos*/
-        .grid-container {
-            flex-direction: column;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(6, 1fr);
-            justify-items: center;
-        }
-        .items {
-            background-size: cover;
-            width: 400px;
-            height: 400px;
-            font-size: 30px;
-            justify-items: center;
-        }
-        .titulo__guiadetalles {
-            font-size: 20px;
-        }
-        table {
-            width: 500px;
-            margin: auto;
-        }
-        .main__guiadetalles {
-            width: auto;
-            height: auto;
-            padding: 20px;
-        }
-        th {
-            font-size: 20px;
-        }
-        td {
-            font-size: 20px;
-        }
-        /*mobile quienes somos*/
-        .flex__p__video {
-            flex-direction: column;
-            width: 100%;
-            justify-items: center;
-            text-align: center;
-            padding: 20px;
-        }
-        .flex__p {
-            font-size: 20px;
-        }
-        video {
-            width: 100%;
-        }
-        .piede__pagina {
-            font-size: 20px;
-        }
-        .h4__footer {
-            justify-items: start;
-        }
-        /*politicas de cambiomobile*/
-        .politica__devolucion {
-            font-size: 20px;
-            height: 600px;
-            padding: 5px;
-        }
-        .h4politica__devolucion {
-            padding: 10px;
-        }
-        .h2politica__devolucion {
-            font-size: 30px;
-        }
-        /*mobile contacto*/
-        .body-contact {
-            padding: 10px;
-        }
-        .titulo-contacto {
-            font-size: 30px;
-        }
-        input {
-            font-size: 30px;
-        }
-        label {
-            font-size: 30px;
-        }
-        .formulario-contacto {
-            padding: 40px;
-        }
-        textarea {
-            width: 300px;
-            height: 200px;
-        }
-        .h4-bloque {
-            font-size: 30px
-        }
+    .h4-bloque {
+        font-size: 30px
     }
+}
