@@ -14,23 +14,29 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a href="../index.html"> <img src="../assets/logo/logo.png" alt=logo width="70px ">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="flex__li"><a href="../index.html">Inicio</a></li>
+                        <li class="flex__li ">
+                            <a href="./quienessomos.html">Quienes somos</a>
+                        </li>
+                        <li class=" flex__li "> <a href="./productos.html ">Productos</a></li>
+                        <li class="flex__li "> <a href="./contacto.html ">Contacto</a></li>
+                        <li class="flex__li "> <a href="./politicasdedevolucion.html ">Politicas de devolucion</a></li>
+                    </ul>
 
-    <nav class="flex__container__ul">
-        <a href="../index.html"> <img src="../assets/logo/logo.png" alt=logo width="70px ">
-        </a>
-        <!--hipervínculos a mis distintas páginas web-->
-        <!--Listas desordenadas-->
-        <!--Icono a home-->
-        <ul>
-            <li class="flex__li"><a href="../index.html ">Inicio</a></li>
-            <li class="flex__li "><a href="../pages/quienessomos.html">Quienes somos</a>
-            </li>
-            <li class="flex__li "> <a href="../pages/productos.html ">Productos</a></li>
-            <li class="flex__li "> <a href="../pages/contacto.html ">Contacto</a></li>
-            <li class="flex__li "> <a href="../pages/politicasdedevolucion.html">Politicas de devolucion</a></li>
-        </ul>
-
-    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -71,31 +77,30 @@
         </button>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-3 col-lg-3">
-                <img class="card-img-top" src="../assets/img-productos/bodys.jpg" alt="conjunto">
+        <div class="row ">
+            <div class="col-12 col-md-3 col-lg-3 ">
+                <img class="card-img-top " data-aos="zoom-in-down " src="../assets/img-productos/enterito1.jpg " alt="enteritos ">
             </div>
-            <div class="col-12 col-md-3 col-lg-3">
-                <img class="card-img-top" src="../assets/img-productos/conjuntos.jpg" alt="conjunto">
+            <div class="col-12 col-md-3 col-lg-3 ">
+                <img class="card-img-top " data-aos="zoom-in-down " src="../assets/img-productos/ajuares.jpg " alt="ajuares ">
             </div>
-            <div class="col-12 col-md-3 col-lg-3">
-                <img class="card-img-top" src="../assets/img-productos/mantas.jpg" alt="mantas">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-3 col-lg-3">
-                <img class="card-img-top" src="../assets/img-productos/enterito1.jpg" alt="enteritos">
-            </div>
-            <div class="col-12 col-md-3 col-lg-3">
-                <img class="card-img-top" src="../assets/img-productos/ajuares.jpg" alt="ajuares">
-            </div>
-            <div class="col-12 col-md-3 col-lg-3">
-                <img class="card-img-top" src="../assets/img-productos/enterito.jpg" alt="">
+            <div class="col-12 col-md-3 col-lg-3 ">
+                <img class="card-img-top " data-aos="zoom-in-down " src="../assets/img-productos/enterito.jpg " alt=" ">
             </div>
         </div>
+        <div class="row ">
+            <div class="col-12 col-md-3 col-lg-3 ">
+                <img class="card-img-top " data-aos="zoom-in-down " src="../assets/img-productos/bodys.jpg" alt="enteritos ">
+            </div>
+            <div class="col-12 col-md-3 col-lg-3 ">
+                <img class="card-img-top " data-aos="zoom-in-down " src="../assets/img-productos/conjuntos.jpg" alt="ajuares ">
+            </div>
+            <div class="col-12 col-md-3 col-lg-3 ">
+                <img class="card-img-top " data-aos="zoom-in-down " src="../assets/img-productos/mantas.jpg" alt=" ">
+            </div>
+        </div>
+    </div>
 
-    </div>
-    </div>
 
     <div class="guiadetalles ">GUIA DE TALLES</div>
     <div class="container table-responsive ">
@@ -181,6 +186,7 @@
         </article>
     </footer>
     <script src="../libs/bootstrap/js/bootstrap.min.js "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
     <script>
         AOS.init();
     </script>

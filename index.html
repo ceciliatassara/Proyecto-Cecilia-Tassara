@@ -7,28 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
     <link rel="shortcut icon" href="./assets/shortcut.PNG">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
     <title>Document</title>
 </head>
 
 <body>
-    <nav class="flex__container__ul">
-        <a href="../index.html"> <img src="../assets/logo/logo.png" alt=logo width="70px ">
-        </a>
-        <!--hipervínculos a mis distintas páginas web-->
-        <!--Listas desordenadas-->
-        <!--Icono a home-->
-        <ul>
-            <li class="flex__li"><a href="./index.html">Inicio</a></li>
-            <li class="flex__li "><a href="./pages/quienessomos.html">Quienes Somos</a></li>
-            <li class="flex__li"> <a href="./pages/productos.html">Productos</a></li>
-            <li class="flex__li"> <a href="./pages/contacto.html ">Contacto</a></li>
-            <li class="flex__li"> <a href="./pages/politicasdedevolucion.html">Politicas de devolucion</a></li>
-        </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a href="../index.html"> <img src="../assets/logo/logo.png" alt=logo width="70px ">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="flex__li"><a href="../index.html">Inicio</a></li>
+                        <li class="flex__li ">
+                            <a href="./pages/quienessomos.html">Quienes somos</a>
+                        </li>
+                        <li class=" flex__li "> <a href="./pages/productos.html">Productos</a></li>
+                        <li class="flex__li "> <a href="./pages/contacto.html">Contacto</a></li>
+                        <li class="flex__li "> <a href="./pages/politicasdedevolucion.html">Politicas de devolucion</a></li>
+                    </ul>
 
-    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -36,7 +45,6 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-
             <div class="carousel-item active">
                 <img src="../assets/portada/portada 2.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
@@ -68,37 +76,44 @@
           <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <h1 class="h1__tituloproductos">NUESTROS PRODUCTOS</h1>
-    <main class="flex__main">
-        <article class="tarjeta">
-            <img class="tarjeta__imagen" src="./assets/ajuares.jpg" alt="imagen producto">
-            <article class="tarjeta__texas">
-                <h3 class="tarjeta__titulo">Ajuares y Mantas</h3>
-                <p class="tarjeta__parrafo">Esta por llegar un integrante mas a la familia? Mimalo con algunos de nuestros ajuares</p>
-                <button class="boton">Ver mas</button>
-            </article>
-        </article>
 
-        <article class="tarjeta">
-            <img class="tarjeta__imagen" src="./assets/enteritos.jpg " alt="imagen producto ">
-            <article class="tarjeta__texas">
-                <h3 class="tarjeta__titulo"><a class="tarjeta__enlace" href="# ">Enteritos</a></h3>
-                <p class="tarjeta__parrafo">Esta por llegar un integrante mas a la familia? Mimalo con algunos de nuestros ajuares</p>
-                <button class="boton">Ver mas</button>
-            </article>
-        </article>
+    <div>
+        <h1 class="h1__tituloproductos" data-aos="flip-right">NUESTROS PRODUCTOS</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4 ">
+        <div class="col ">
+            <div class="card h-100 ">
+                <img src="./assets/ajuares.jpg " alt="producto">
+                <div class="card-body ">
+                    <h5 class="card-title ">AJUARES</h5>
+                    <p class="card-text ">Encontrá la Nueva Colección 2022 de camperas, remeras, sandalias, zapatillas, y más. Cuotas sin interés y envíos.</p>
+                    <button type="button" class="btn btn-secondary" data-aos="zoom-in">VER MAS</button>
+                </div>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card h-100 ">
+                <img src="./assets/conjuntos.jpg " alt="producto ">
+                <div class="card-body ">
+                    <h5 class="card-title ">CONJUNTOS</h5>
+                    <p class="card-text ">Encontrá la Nueva Colección 2022 de camperas, remeras, sandalias, zapatillas, y más. Cuotas sin interés y envíos.</p>
+                    <button type="button" class="btn btn-secondary" data-aos="zoom-in">VER MAS</button>
+                </div>
 
-        <article class="tarjeta">
-            <img class="tarjeta__imagen" src="./assets/conjuntos.jpg " alt="imagen producto">
-            <article class="tarjeta__texas">
-                <h3 class="tarjeta__titulo"><a class="tarjeta__enlace" href="# ">Conjuntos</a></h3>
-                <p class="tarjeta__parrafo">Esta por llegar un integrante mas a la familia? Mimalo con algunos de nuestros ajuares</p>
-                <button class="boton ">Ver mas</button>
-            </article>
-        </article>
+            </div>
+        </div>
+        <div class="col ">
+            <div class="card h-100 ">
+                <img src="./assets/enteritos.jpg " alt="producto">
+                <div class="card-body ">
+                    <h5 class="card-title ">ENTERITOS</h5>
+                    <p class="card-text ">Encontrá la Nueva Colección 2022 de camperas, remeras, sandalias, zapatillas, y más. Cuotas sin interés y envíos.</p>
+                    <button type="button" class="btn btn-secondary" data-aos="zoom-in">VER MAS</button>
+                </div>
 
-    </main>
-
+            </div>
+        </div>
+    </div>
     <footer id="footer">
         <article>
             <h4 class="h4__footer"> Medios de pago:</h4>
@@ -124,6 +139,7 @@
         </article>
     </footer>
     <script src="../libs/bootstrap/js/bootstrap.min.js "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
     <script>
         AOS.init();
     </script>
