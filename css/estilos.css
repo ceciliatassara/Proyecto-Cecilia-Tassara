@@ -299,9 +299,10 @@
                 }
                 .row {
                     flex-direction: column;
+                    align-content: center;
                 }
                 .col {
-                    width: 100%;
+                    width: 80%;
                 }
                 .flex__li {
                     font-size: 15px;
