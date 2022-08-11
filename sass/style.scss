@@ -1,23 +1,27 @@
 /*Font Descargada*/
             
 @font-face {
-                font-family: 'Poppins', sans-serif;
-                src: url(../assets/fonts/Poppins-ExtraLight.ttf);
-            }
+font-family: 'Poppins', sans-serif;
+src: url(../assets/fonts/Poppins-ExtraLight.ttf);
+           }
             
-            * {
-                margin: 0;
+* {
+  margin: 0;
                 padding: 0;
                 box-sizing: border-box;
+}
+
+$estilos(
+    camel: #E9D5C0,
+    gris: grey,
+);
+html {
+     height: 100%;
             }
             
-            html {
-                height: 100%;
-            }
-            
-            body {
-                background-color: #E9D5C0;
-            }
+body {
+    background-color: map-get($map: $estilos, camel);
+    }
             /*Navegador*/
             
             .navbar {
@@ -143,11 +147,15 @@
                 margin: 20px;
                 border: solid white 2px;
             }
-            
+            @mixin video ($heigth, $width) {
+                height: $heigth;
+                width: $width;
+                
+            }
             video {
-                height: 30%;
+                @include video(300px, 300px)
                 padding: 10px;
-                width: 20%;
+                
             }
             
             .piede__pagina {
@@ -225,8 +233,8 @@
             }
             
             .h2politica__devolucion {
-                font-size: 1rem;
-            }
+                @extend .h4politica__devolucion }
+
             /*contacto*/
             
             .body-contact {
