@@ -4,33 +4,35 @@
 font-family: 'Poppins', sans-serif;
 src: url(../assets/fonts/Poppins-ExtraLight.ttf);
            }
-            
+$colorPrincipal: #E9D5C0;
+
 * {
   margin: 0;
-                padding: 0;
-                box-sizing: border-box;
+  padding: 0;
+  box-sizing: border-box;
+} 
+$estilos:(
+    gris: grey,
+    rosa: #FBE6EF,
+    celeste:#E0FFFD);
+
+body{
+    background-color: $colorPrincipal;
 }
 
-$estilos(
-    camel: #E9D5C0,
-    gris: grey,
-);
 html {
      height: 100%;
             }
             
-body {
-    background-color: map-get($map: $estilos, camel);
-    }
-            /*Navegador*/
+/*Navegador*/
             
-            .navbar {
-                padding: 0px;
-                margin: 0px;
-            }
+.navbar {
+    padding: 0px;
+    margin: 0px;
+        }
             
-            .collapse navbar-collapse {
-                justify-content: center;
+.collapse navbar-collapse {
+    justify-content: center;
             }
             
             .navbar-expand-lg .navbar-collapse {
@@ -150,14 +152,11 @@ body {
             @mixin video ($heigth, $width) {
                 height: $heigth;
                 width: $width;
-                
+                }
+            video{@include video(300px,300px);
             }
-            video {
-                @include video(300px, 300px)
-                padding: 10px;
                 
-            }
-            
+
             .piede__pagina {
                 background-size: cover;
                 font-size: 90px;
@@ -217,13 +216,13 @@ body {
             /*politica de dvolucion*/
             
             .politica__devolucion {
-                border: dashed grey;
-                color: grey;
+                border: dashed ;
+                color: map-get($estilos , gris);
                 text-align: center;
                 height: 50%;
                 margin: 10px;
                 font-size: 40px;
-                background-color: #E0FFFD;
+                background-color: map-get($estilos , celeste);
                 align-items: center;
                 padding: 50px;
             }
@@ -296,89 +295,84 @@ body {
             }
             /*Tablet*/
             
-            @media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {}
             /*mobile*/
             
-            @media only screen and (max-width: 576px) {
-                {
-                    flex-direction: column;
-                    align-items: center;
-                    font-size: 10px;
-                    padding: 10px;
+@media only screen and (max-width: 576px) {
+   .row {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        }
+    .col {
+        width: 80%;
+         }
+    .flex__li {
+        font-size: 15px;
+        padding: 10px;
+        margin: 10px;
+             }
+    .flex__container__ul {
+        flex-direction: column;
+             }
+    .background-titulo {
+        font-size: 50px;
+        padding: 20px;
+        margin: 20px;
                 }
-                .row {
-                    flex-direction: column;
-                    align-content: center;
+    .background-inicio {
+        height: 250px;
                 }
-                .col {
-                    width: 80%;
+    .h1__tituloproductos {
+        font-size: 2rem;
+        text-align: center;
                 }
-                .flex__li {
-                    font-size: 15px;
-                    padding: 10px;
-                    margin: 10px;
+    .flex__main {
+        flex-direction: column-reverse;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
                 }
-                .flex__container__ul {
-                    flex-direction: column;
+    .tarjeta {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 10px;
                 }
-                .background-titulo {
-                    font-size: 50px;
-                    padding: 20px;
-                    margin: 20px;
-                }
-                .background-inicio {
-                    height: 250px;
-                }
-                .h1__tituloproductos {
-                    font-size: 2rem;
-                    text-align: center;
-                }
-                .flex__main {
-                    flex-direction: column-reverse;
-                    grid-template-columns: repeat(1, 1fr);
-                    grid-template-rows: repeat(3, 1fr);
-                }
-                .tarjeta {
-                    flex-direction: column;
-                    align-content: center;
-                    align-items: center;
-                    padding: 10px;
-                    margin: 10px;
-                }
-                .tarjeta__imagen {
+    .tarjeta__imagen {
                     width: 90%;
                     align-items: center;
                 }
-                .tarjeta__texas {
+    .tarjeta__texas {
                     padding: none;
                     margin: none;
                     width: 300px;
                     height: 200px;
                     border-radius: 10%;
                 }
-                .tarjeta__enlace {
+    .tarjeta__enlace {
                     font-size: 30px;
                     padding: none;
                     margin: none;
                 }
-                .tarjeta__parrafo {
+    .tarjeta__parrafo {
                     font-size: 1rem;
                     padding: none;
                     margin: none;
                 }
-                .boton {
+    .boton {
                     padding: none;
                     width: 100px;
                     height: 50px;
                     font-size: 20px;
                     margin: none;
                 }
-                #footer {
+    #footer {
                     grid-template-columns: repeat(1, 1fr);
                     font-size: 20px;
                 }
-                /*mobile productos*/
-                .grid-container {
+    /*mobile productos*/
+    .grid-container {
                     flex-direction: column;
                     grid-template-columns: repeat(1, 1fr);
                     grid-template-rows: repeat(6, 1fr);
