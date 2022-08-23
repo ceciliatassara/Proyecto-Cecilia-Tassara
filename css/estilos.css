@@ -200,7 +200,7 @@ video {
   align-items: center;
   padding: 0 1.5rem; }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
     margin-top: 30px;}
 
 .titulo-contacto {
