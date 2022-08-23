@@ -83,7 +83,9 @@ nav ul li a {
   border-radius: 20px; }
 
 .row {
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 30px;
+ }
 
 /*Sobre nosotros*/
 .flex__container {
@@ -168,11 +170,12 @@ video {
   display: grid;
   font-size: 30px;
   color: white;
-  padding: 10px;
+  padding: 20px;
   grid-template-columns: repeat(4, 1fr);
   justify-items: start;
   gap: 15px;
-  width: 100%; }
+  width: 100%;
+  margin-top: 50px; }
 
 /*politica de dvolucion*/
 .politica__devolucion {
@@ -184,7 +187,8 @@ video {
   font-size: 40px;
   background-color: #E0FFFD;
   align-items: center;
-  padding: 50px; }
+  padding: 50px;
+  margin-top: 50px; }
 
 .h4politica__devolucion, .h2politica__devolucion {
   font-size: 1rem; }
@@ -195,6 +199,9 @@ video {
   justify-content: center;
   align-items: center;
   padding: 0 1.5rem; }
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    margin-top: 30px;}
 
 .titulo-contacto {
   color: black; }
@@ -327,7 +334,6 @@ textarea {
   /*mobile quienes somos*/
   .flex__p__video {
     flex-direction: column;
-    width: 100%;
     justify-items: center;
     text-align: center;
     padding: 20px; }

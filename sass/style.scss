@@ -109,6 +109,7 @@ html {
             
             .row {
                 justify-content: center;
+                margin-top: 30px;
             }
             /*Sobre nosotros*/
             
@@ -207,11 +208,13 @@ html {
                 display: grid;
                 font-size: 30px;
                 color: white;
-                padding: 10px;
+                padding: 20px;
                 grid-template-columns: repeat(4, 1fr);
                 justify-items: start;
                 gap: 15px;
                 width: 100%;
+                margin-top: 50px;
+                
             }
             /*politica de dvolucion*/
             
@@ -225,6 +228,7 @@ html {
                 background-color: map-get($estilos , celeste);
                 align-items: center;
                 padding: 50px;
+                margin-top: 50px;
             }
             
             .h4politica__devolucion {
@@ -242,7 +246,10 @@ html {
                 align-items: center;
                 padding: 0 1.5rem;
             }
-            
+            .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+                margin-top: 30px;}
+
+
             .titulo-contacto {
                 color: black;
             }
@@ -406,7 +413,6 @@ html {
                 /*mobile quienes somos*/
                 .flex__p__video {
                     flex-direction: column;
-                    width: 100%;
                     justify-items: center;
                     text-align: center;
                     padding: 20px;
