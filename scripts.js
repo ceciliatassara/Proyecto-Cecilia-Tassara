@@ -1,3 +1,4 @@
-const telefono = prompt(message"Ingresa tu telefono")
-console.log(telefono)
-alert("Hola mundo")
+
+const nombre = prompt("Hola ingresa tu nombre")
+const texto = "Bienvenido" + nombre
+alert(texto)
