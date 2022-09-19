@@ -273,7 +273,8 @@ textarea {
   .table-responsive{
     visibility: collapse;
   }
-  .guiadetalles {visibility: collapse;}
+  .guiadetalles {
+    visibility: collapse;}
   .flex__main {
     flex-direction: column-reverse;
     grid-template-columns: repeat(1, 1fr);
