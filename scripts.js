@@ -1,9 +1,9 @@
 
-let nombreUsuario = prompt("Ingresar nombre de usuario");
-let ingreseUnNumero = parseInt((prompt "ingrese el numero 40"))
-let numero = 40
-if (numero == 40) {
-    alert("la suma es igual a 40")
+const nombreUsuario = prompt("Ingresar nombre de usuario");
+const ingreseSuEdad = prompt("Ingresar su edad");
+
+if (ingreseSuEdad == 18) {
+    alert("Usted es mayor de edad")
 }
 
 let variable1 = 20;
