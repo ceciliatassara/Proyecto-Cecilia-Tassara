@@ -5,7 +5,7 @@ const ingreseSuEdad = prompt("Ingresar su edad");
 if (ingreseSuEdad == 18) {
     alert("Usted es mayor de edad")
 } else { 
-    alert("Usted no es mayor de edad")
+    alert("Hola usted no es mayor de edad")
 }
 
 let variable1 = 20;
